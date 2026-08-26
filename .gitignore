@@ -1,0 +1,9 @@
+# Ignorar ambiente virtual Python
+venv/
+__pycache__/
+
+# Ignorar variáveis de ambiente (senhas/chaves da IA)
+.env
+
+# Ignorar dependências do Node (caso você rode npm install na raiz sem querer)
+node_modules/
