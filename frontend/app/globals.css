@@ -53,7 +53,7 @@
   --muted-foreground: oklch(0.52 0.02 255);
 
   /* Azul escuro institucional */
-  --primary: oklch(0.36 0.11 259);
+  --primary: oklch(36.098% 0.11043 258.879);
   --primary-foreground: oklch(0.985 0.005 250);
   --secondary: oklch(0.94 0.008 250);
   --secondary-foreground: oklch(0.3 0.05 258);
