@@ -6,6 +6,7 @@ import { ChatSidebar, type ChatHistoryItem } from '@/components/chat-sidebar'
 import { ChatMessage, TypingIndicator, type Message } from '@/components/chat-message'
 import { ChatComposer } from '@/components/chat-composer'
 import { CoiLogo } from '@/components/coi-logo'
+import Image from "next/image"
 
 const HISTORY: ChatHistoryItem[] = [
   { id: '1', title: 'Instalação VPN', group: 'Hoje' },
@@ -162,8 +163,15 @@ export function AjudoChat() {
 function EmptyState({ onPick }: { onPick: (text: string) => void }) {
   return (
     <div className="flex flex-col items-center py-10 text-center md:py-16">
-      <CoiLogo className="size-12 rounded-xl text-base" />
-      <h2 className="mt-5 text-balance text-2xl font-semibold tracking-tight text-foreground">
+      {/* SUA LOGO OFICIAL AQUI */}
+      <Image 
+        src="/ajUDO-logotipo.svg" 
+        alt="Logotipo AjUDO" 
+        width={140} 
+        height={45} 
+        className="object-contain mb-2" 
+      />
+      <h2 className="mt-3 text-balance text-2xl font-semibold tracking-tight text-foreground">
         Olá, sou o ajUDO
       </h2>
       <p className="mt-2 max-w-md text-pretty text-sm leading-relaxed text-muted-foreground">
